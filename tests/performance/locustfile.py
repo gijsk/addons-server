@@ -12,9 +12,7 @@ The events are:
 * hatch_complete
 """
 import logging
-import os
 import random
-import re
 import time
 
 from locust import HttpLocust, TaskSet, task
@@ -23,6 +21,7 @@ import lxml.html
 logging.Formatter.converter = time.gmtime
 
 log = logging.getLogger(__name__)
+
 
 class EventMarker(object):
     """
